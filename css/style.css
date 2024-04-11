@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+header{
+    background-color: #dfdfdf;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 10px 100px;
+}
+.logo{
+    color: rgb(60, 96, 238);
+    font-size: 1.8em;
+    padding-left: 30PX;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+header ul{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    color: rgb(60, 96, 238);
+    list-style: none;
+    font-size: 19px;
+}
+header a{
+    text-decoration: none;
+}
+header ul a:hover{
+    color: #072b6d;
+}
+section{
+    padding: 100px 100px;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: rgb(19, 35, 64);
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.main h2{
+    font-size: 1.2em;
+    color: white;
+}
+.main h2 span{
+    font-size: 2em;
+    color: rgb(29, 29, 249);
+    font-weight: 700;
+    display: inline-block;
+    margin-top: 10px;
+} 
+.main h3{
+    color: white;
+    font-size: 1.6em;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.button{
+    display: inline-block;
+    background-color: #253ce9;
+    letter-spacing: 1px;
+    font-size: 1.1em;
+    font-weight: 700;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: white;
+    text-decoration: none;
+    transition: 0.7s ease;
+}
+.button:hover{
+    background-color: #072b6d;
+    transform: scale(1.1);
+}
+
+.socialicones a{
+    color: white;
+    font-size: 1.7em;
+    padding-right: 20px;
+}
+.f-img{
+    border-radius: 15px 50px 30px;
+    box-shadow: 10px 5px 5PX;
+    width: 100%;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    color: #253ce9;
+    font-weight: 700;
+    font-size: 2.2em;
+    margin-bottom: 30px;
+}
+.content {
+  display: flex;
+  justify-content: center;  
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card{
+   background-color: white;
+   width: 18.25em;
+   box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+   max-height: 30.75em;
+   margin-right: 20px;
+   border-radius: 10px;
+   padding: 25px;
+   transition: 1.7s ease;
+   margin-bottom: 10px;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.icone {
+   color: #253ce9;
+   font-size: 8.25em;
+   display: flex;
+   justify-content: center;
+}
+.info{
+    text-align: center;
+}
+.info h3{
+    color: #285cbd;
+    font-size: 1.8em;
+    font-weight: 700;
+    margin: 10px;
+}
+.info p{
+    font-size: 1em;
+    margin-top: 30px;
+}
+.projects{
+    background-color: #021538;
+}
+.projects .content{
+    margin-top: 30px;
+}
+.project-card{
+    background-color: white;
+    border: 1px solid white;
+    min-height: 18em;
+    width: 18em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 1.7s ease;
+}
+.project-card:hover{
+    transform: scale(1.1);
+}
+ .project-img img{
+   width: 100%;
+   height: 12.5em;
+ }
+ .project-img img:hover{
+    opacity: 0.5;
+ }
+.project-info{
+    padding: 10px;
+}
+.project-category{
+    letter-spacing: 1px;
+    font-size: 1.1em;
+    color: #000;
+}
+.project-title{
+    display: flex;
+    justify-content: space-between;
+}
+.project-title a{
+    text-decoration: none;
+}
+.project-title a:hover{
+    color: #253ce9;
+}  
+.contact .icone{
+    font-size: 4.5em;
+}
+.contact .info h3 {
+    color: #000;
+}
+.contact .info p{
+    font-size: 1.5em;
+}
+.footer{
+  background-color: #03122e;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.footer-p{
+  color: white;
+  font-size: 1.8em;
+  font-weight: 500;
+  }
+.footer-p span{
+  color: #253ce9;
+}
+
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+    ul{
+        padding-left: 10px;
+    }
+    .title{
+        font-size: 1.8em;
+    }
+    section{
+        padding: 80px 20px;
+    }
+    .main h2{
+        font-size: 1em;
+    }
+    .main h3{
+        font-size: 1.6em;
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+}
